@@ -1,10 +1,10 @@
 spring:
   application:
-    name: tsinjo-std21001
+    name: tsinjo-std23016
 
   datasource:
     username: postgres
-    password: yourpassword
+    password: liantsoa2
     driver-class-name: org.postgresql.Driver
 
   flyway:
