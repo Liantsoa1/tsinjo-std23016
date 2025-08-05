@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: tsinjo-std21001
+
+  datasource:
+    username: postgres
+    password: yourpassword
+    driver-class-name: org.postgresql.Driver
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  thymeleaf:
+    cache: false
