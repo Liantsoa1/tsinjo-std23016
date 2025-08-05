@@ -1,0 +1,12 @@
+spring:
+  config:
+    activate:
+      on-profile: preprod
+
+  datasource:
+    url: jdbc:postgresql://preprod-db-host:5432/tsinjo_preprod
+    username: postgres
+    password: liantsoa2
+
+  flyway:
+    locations: classpath:db/migration,classpath:db/migration-preprod
