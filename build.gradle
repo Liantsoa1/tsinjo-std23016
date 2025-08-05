@@ -147,4 +147,5 @@ dependencies {
 
     implementation("org.flywaydb:flyway-core")
     implementation("org.postgresql:postgresql:42.1.4")
+    implementation("org.springframework.data:spring-data-jpa:4.0.0-M3")
 }
