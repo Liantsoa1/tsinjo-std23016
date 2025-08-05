@@ -1,5 +1,5 @@
 package com.my.company.model;
 
-public enum MeansofPayment {
+public enum MeansOfPayment {
     ORANGE
 }
