@@ -8,6 +8,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Beneficiary {
     private Long beneficiaryId;
-    private String fullName;
     private String email;
 }

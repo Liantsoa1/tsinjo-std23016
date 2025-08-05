@@ -11,5 +11,5 @@ public class Payment {
     private String payementId;
     private LocalDate paymentDate;
     private int paymentAmount;
-    private MeansOfPayment meansOfPayment;
+    private MeansofPayment meansOfPayment;
 }
