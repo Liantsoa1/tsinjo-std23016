@@ -43,6 +43,4 @@ public class VolaClient {
             return VerificationStatus.VERIFYING;
         }
     }
-
-    // Tu peux ajouter une méthode submitPayment() pour envoyer le paiement initialement
 }

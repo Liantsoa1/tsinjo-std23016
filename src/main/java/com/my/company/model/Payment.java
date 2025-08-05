@@ -37,5 +37,8 @@ public class Payment {
     @Enumerated(EnumType.STRING)
     @Column(name = "verification_status", nullable = false)
     private VerificationStatus verificationStatus;
+
+    public void setPaymentAmount() {
+    }
 }
 
