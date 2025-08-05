@@ -41,12 +41,12 @@ public class TsinjoController {
 
         // 1. Créer un Payment local, avec verificationStatus = VERIFYING
         Payment payment = new Payment();
-        payment.setPaymentId(paymentReference); // ID donné par le formulaire / Vola
+        payment.setPaymentId(paymentReference);
         payment.setPayerEmail(email);
         payment.setPaymentDate(LocalDate.now());
         payment.setMeansOfPayment(moyenPaiement);
         payment.setVerificationStatus(VerificationStatus.VERIFYING);
-        payment.setPaymentAmount( /* montant récupéré du formulaire ou autre source */ );
+        payment.setPaymentAmount();
 
         paymentRepository.save(payment);
 
@@ -59,11 +59,11 @@ public class TsinjoController {
 
         donationRepository.save(donation);
 
-        // 3. (Optionnel) Appeler l'API Vola pour soumettre le paiement (si pas déjà fait)
+        // 3. (Optionnel) Appeler l'API Vola pour soumettre le paiement
         volaClient.submitPayment(payment);
 
-        // 4. Retourner vers la page d'accueil ou confirmation
-        return "redirect:/";  // ou la page avec la liste
+        // 4. Retourner vers la page d'accueil
+        return "redirect:/";
     }
 
 }
