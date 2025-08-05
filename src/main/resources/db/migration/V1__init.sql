@@ -1,14 +1,12 @@
 -- Table for Donor
 CREATE TABLE donor (
                        donor_id BIGINT PRIMARY KEY,
-                       lastname VARCHAR(100) NOT NULL,
                        full_name VARCHAR(100) NOT NULL
 );
 
 -- Table for Beneficiary
 CREATE TABLE beneficiary (
                              beneficiary_id BIGINT PRIMARY KEY,
-                             lastname VARCHAR(100) NOT NULL,
                              full_name VARCHAR(100) NOT NULL
 );
 
