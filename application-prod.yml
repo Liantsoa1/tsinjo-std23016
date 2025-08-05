@@ -1,0 +1,12 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    url: jdbc:postgresql://prod-db-host:5432/tsinjo_prod
+    username: postgres
+    password: liantsoa2
+
+  flyway:
+    locations: classpath:db/migration,classpath:db/migration-prod
